@@ -1,0 +1,297 @@
+/*https://cssreference.io/ */
+*html,body
+{
+	margin: 0;
+	padding:0;
+}
+
+body{
+	height: 3000px;
+}
+
+header{
+	
+	height: 112px;
+	line-height: 112px;
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+}
+
+
+.secondary{
+	background-color: deepskyblue;
+	box-shadow: 0px 0px 17px 0px;
+	transition: all 0.5s ease-in;
+}
+
+
+
+
+
+
+ul
+{
+	list-style: none;
+}
+
+li
+{
+	display: inline-block;
+}
+
+header nav
+{
+	float:right;
+}
+
+.logo
+{
+	margin-top: 30px;
+	
+}
+
+header nav ul li a
+{
+	padding-right: 30px;
+	font-weight: bold;
+	color: white;
+}
+
+header nav ul li a:hover {
+ 	text-decoration: none;
+ 	color: black;
+ 	transition: all 0.5s ease-in;
+}
+
+
+.img1
+{
+	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(..//image/newyork4.jpg);
+	background-size: 100% 100%; 
+}
+
+.slider,.slider ul ,.slider ul li
+{
+	height: 710px;
+	width: 100%;
+	color: white;
+	text-align: center;
+}
+
+.slider h2
+{
+	font-weight: bold;
+	margin-top: 250px;
+}
+
+
+
+.slider span
+{
+	color: orange;
+}
+
+.slider a
+{
+	padding: 10px 40px;
+	margin-right: 10px;
+
+}
+
+.slider a.btn-half
+{
+	background-color:deepskyblue;
+	color: white;
+
+}
+.slider a.btn-half:hover
+{
+	opacity: 0.7;
+}
+
+
+.slider a.btn-full
+{
+	background-color:orange;
+	color: white;
+}
+
+.slider a.btn-full:hover
+{
+	opacity: 0.7;
+}
+
+
+.img2
+{
+	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(..//image/newyork2.jpg);
+	background-size: 100% 100%; 
+}
+
+.img3
+{
+	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(..//image/newyork3.jpg);
+	background-size: 100% 100%; 
+}
+
+.slider i
+{
+	font-size: 30px;
+	margin-right: 10px;
+}
+
+
+.intro-area
+{
+	position: relative;
+	padding: 100px 0px;
+	text-align: center;
+}
+
+.sub-heading
+{
+	position: relative;
+	margin-bottom:75px;
+}
+
+
+/* used to make a line with animation */ 
+.sub-heading:before
+{
+	content: "";
+	position: absolute;
+	top:100%;
+	left: 50%;
+	margin-left: -3%;
+	width: 6%;
+	height: 1px;
+	background-color: deepskyblue;
+	
+	z-index: 1;
+
+	/*different transition are used to support at different browsers*/
+	-webkit-transition: 0.3s ease; /*chrome*/
+	-moz-transition: 0.3s ease;
+	-ms-transition: 0.3s ease; /*internet explore*/
+	-o-transition: 0.3s ease; /*opera*/
+	transition: 0.3s ease; /* other browser*/
+
+
+}
+
+.sub-heading:hover:before
+{
+	width:24%;
+	margin-left: -12%;
+	/*right: 42%;
+	left: 41%;
+	*/
+	 
+}
+
+.sub-heading:after
+{
+	content: "";
+	position: absolute;
+	top:100%;
+	left: 50%;
+	margin-left: -12%;
+	width: 24%;
+	height: 1px;
+	background-color: #e1e1e1;
+}
+
+
+.sub-heading p
+{
+	color:#818181;
+	display: inline-block;
+	padding: 0px 0px 20px;
+	position: relative;
+	line-height: 24px;
+	letter-spacing: 0.025em;
+}
+
+
+
+.intro-block{
+	position: relative;
+	background-color: #f7f7f7;
+	border: bold 2px;
+	border-color: blue;
+	margin: 50px 0px 0px;
+	padding: 70px 25px 40px;
+}
+
+
+/*     active class is used to make it activated               */
+
+.intro-block:hover, .intro-block.active
+{
+	background:deepskyblue;
+	
+}
+
+.intro-block:hover
+{	-webkit-transition: 0.6s ease; /*chrome*/
+	-moz-transition: 0.6s ease;
+	-ms-transition: 0.6s ease; /*internet explore*/
+	-o-transition: 0.6s ease; /*opera*/
+	transition: 0.6s ease; /* other browser*/
+	
+}
+
+
+
+
+
+.intro-block .intro-icon
+{
+	position: absolute;
+	top:-31px;
+	left:50%;
+	margin-left: -31px;
+}
+
+
+.intro-block .fa
+{
+	width: 63px;
+	height: 63px;
+	font-size: 30px;
+	color: white;
+	line-height: 2;
+	background-color: deepskyblue;
+	border-radius: 50%;
+	box-shadow: 0px 0px 0px 10px #CCEEF9;
+}
+
+
+.intro-block:hover .fa, .intro-block.active .fa
+{
+	background:white;
+	color:deepskyblue;
+	box-shadow: 0px 0px 0px 10px deepskyblue; 
+}
+
+
+
+.intro-block h3
+{
+	font-size: 18px;
+	color:deepskyblue;
+	font-weight: 700;
+	margin-bottom: 15px;
+}
+
+.intro-block p
+{
+	color: #505050;
+}
+
+
+.intro-block:hover h3,.intro-block:hover p
+{
+	color:white;
+}
